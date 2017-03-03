@@ -1,5 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Projects";
 }
+<h1>My Top Three Starred Projects on GitHub</h1>
 
-@ViewBag.myString
+@foreach(var project in Model)
+{
+    <h2><a href="@project.HtmlUrl">@project.Name</a></h2>
+    <h3>@project.Description</h3>
+}
