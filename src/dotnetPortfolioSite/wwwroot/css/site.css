@@ -36,3 +36,24 @@ textarea {
     display: none
   }
 }
+
+.row-flexer {
+    display: inline-flex;
+}
+
+.bw-fade-in-char {
+    position: relative;
+    transition: opacity 300ms, transform 800ms ease-out;
+}
+
+.bw-opacity-0 {
+    opacity: 0;
+}
+
+.bw-anim-y-positive-offset {
+    transform: translateY(2vh);
+}
+
+.bw-anim-y-negative-offset {
+    transform: translateY(-2vh);
+}
