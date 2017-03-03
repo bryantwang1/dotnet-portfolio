@@ -1,10 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Projects";
 }
-<h1>My Top Three Starred Projects on GitHub</h1>
+<h2>My Top Three Starred Projects on GitHub</h2>
 
-@foreach(var project in Model)
-{
-    <h2><a href="@project.HtmlUrl">@project.Name</a></h2>
-    <h3>@project.Description</h3>
+@{
+    int counter = 0;
 }
+@foreach (var project in Model)
+{
+    counter++;
+    <div class="panel panel-primary bw-opacity-0" id="panel-@counter">
+        <div class="panel-heading"><a href="@project.HtmlUrl" class="white-link">@project.Name</a></div>
+        <div class="panel-body">
+            @project.Description
+        </div>
+    </div>
+}
+

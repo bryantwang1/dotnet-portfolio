@@ -57,3 +57,26 @@ textarea {
 .bw-anim-y-negative-offset {
     transform: translateY(-2vh);
 }
+.bw-anim-x-positive-offset {
+    transform: translateX(2vw);
+}
+
+.bw-anim-x-negative-offset {
+    transform: translateX(-2vw);
+}
+
+.center-text {
+    text-align:center;
+}
+
+.white-link {
+    color: white;
+}
+
+.white-link:hover {
+    color: yellow;
+}
+
+.panel {
+    transition: all 500ms;
+}
