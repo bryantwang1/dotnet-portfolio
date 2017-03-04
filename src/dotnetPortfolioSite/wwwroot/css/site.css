@@ -65,6 +65,14 @@ textarea {
     transform: translateX(-2vw);
 }
 
+.bw-anim-x-complete-pos-offset {
+    transform: translateX(101vw);
+}
+
+.bw-anim-x-complete-neg-offset {
+    transform: translateX(-110vw);
+}
+
 .center-text {
     text-align:center;
 }
@@ -79,4 +87,39 @@ textarea {
 
 .panel {
     transition: all 500ms;
+}
+
+.bw-anim-square {
+    position: relative;
+    transition: all 300ms;
+    height: 100px;
+    width: 100px;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.orange-bg {
+    background-color: orange;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.green-bg {
+    background-color: green;
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.purple-bg {
+    background-color: purple;
+}
+
+.pink-bg {
+    background-color: pink;
 }
